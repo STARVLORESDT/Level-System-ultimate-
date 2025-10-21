@@ -8,7 +8,7 @@ async function handleMessage({ client, message }) {
   const last = lastMessageTimestamps.get(key) || 0;
   if (now - last < PREFIX_MESSAGE_COOLDOWN) return;
   lastMessageTimestamps.set(key, now);
-  const xp = 10;
+  const xp = Math.floor(Math.random() * 11) + 5;
   await UserXP.addTextXP(message.guild.id, message.author.id, xp);
 }
 
