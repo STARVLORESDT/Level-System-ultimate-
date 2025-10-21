@@ -1,0 +1,23 @@
+{
+  "name": "discord-leveling-system",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "mongoose": "^7.0.0",
+    "dotenv": "^16.0.0",
+    "discord-arts": "0.7.1",
+    "node-cron": "^3.0.0",
+    "canvas": "^2.11.0",
+    "node-fetch": "^2.6.7",
+    "@discordjs/rest": "^1.6.0",
+    "discord-api-types": "^0.37.37"
+  }
+}
